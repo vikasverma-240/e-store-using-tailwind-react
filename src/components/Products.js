@@ -12,7 +12,7 @@ const Products = ({ products = [] }) => {
                             const { id, title, price, category, image } = product;
                             return (
                                 <div className="lg:w-1/4 md:w-1/2 p-4 w-full border border-opacity-50  cursor-pointer">
-                                    <Link to={`/product/${id}`} className="block relative h-48 rounded overflow-hidden">
+                                    <Link to={`/product/${id}`} className="block relative h-48 rounded overflow-hidden ">
                                         <img alt="{title}" className="object-contain object-center w-full h-full block" src={image} />
                                     </Link>
                                     <div className="mt-4">

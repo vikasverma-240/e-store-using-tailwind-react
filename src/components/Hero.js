@@ -11,7 +11,7 @@ const Hero = () => {
                         </h1>
                         <p className="mb-8 leading-relaxed">Welcome to our e-store. Discover a curated selection of high-quality products, from tech gadgets to stylish fashion. Enjoy hassle-free shopping with excellent customer support. Happy shopping!.</p>
                         <div className="flex justify-center">
-                            <button className="inline-flex text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-white hover:text-orange-500 hover:border hover:border-orange-500 transition-all duration-300 rounded text-lg">Explore Our Product's</button>
+                            <button className="inline-flex text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-white hover:text-orange-500 hover:bg-gray-200 transition-all duration-300 rounded text-lg">Explore Our Product's</button>
                         </div>
                     </div>
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

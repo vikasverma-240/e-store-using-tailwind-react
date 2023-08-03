@@ -38,12 +38,12 @@ const Navbar = () => {
                     {
                         navigations.map((navigation) => {
                             return (
-                                <Link to={navigation.path} key={navigation.id} className='mr-5 hover:text-grey-900'>{navigation.name}</Link>
+                                <Link to={navigation.path} key={navigation.id} className='mr-5 text-gray-600 hover:text-orange-500 transition-all duration-300'>{navigation.name}</Link>
                             )
                         })
                     }
                 </nav>
-                <button className="inline-flex text-white bg-orange-500 border-0 py-1 px-3 focus:outline-none hover:text-orange-500 hover:bg-white hover:border hover:border-orange-500 transition-all duration-300 rounded text-lg mt-4 md:mt-0">Cart 	&rarr;
+                <button className="inline-flex text-white bg-orange-500 border-0 py-1 px-3 focus:outline-none hover:text-orange-500 hover:bg-gray-200 transition-all duration-300 rounded text-m font-medium mt-4 md:mt-0">Cart &rarr;
                 </button>
             </div>
         </header>

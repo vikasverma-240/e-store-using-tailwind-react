@@ -15,8 +15,8 @@ const FeaturedCard = ({cards = [1,2,3]}) => {
                         {
                             cards?.map((card) => {
                                 return (
-                                    <Link to={`/categories/${card}`} key={card} className="p-4 md:w-1/4 cursor-pointer">
-                                        <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col ">
+                                    <Link to={`/categories/${card}`} key={card} className="p-4 md:w-1/4 cursor-pointer ">
+                                        <div className="flex align-items:center justify-center rounded-lg h-full bg-gray-100 p-8 flex-col ">
                                             <div className="flex items-center mb-3">
                                                 <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-orange-500 text-white flex-shrink-0">
                                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
