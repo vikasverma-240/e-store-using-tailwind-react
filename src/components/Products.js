@@ -9,18 +9,19 @@ const Products = ({ products = [] }) => {
                     <div className="flex flex-wrap -m-4">
                         {products.map((product) => {
                             console.log(product, 'product');
-                            const{id, title, price, description, category, image} = product;
+                            const { id, title, price, category, image } = product;
                             return (
-                                <div className="lg:w-1/4 md:w-1/2 p-4 w-full border border-opacity-50 mb-4 cursor-pointer">
+                                <div className="lg:w-1/4 md:w-1/2 p-4 w-full border border-opacity-50  cursor-pointer">
                                     <Link to={`/product/${id}`} className="block relative h-48 rounded overflow-hidden">
-                                        <img alt="{title}" className="object-contain object-center w-full h-full block" src={image}/>
+                                        <img alt="{title}" className="object-contain object-center w-full h-full block" src={image} />
                                     </Link>
                                     <div className="mt-4">
-                                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1 uppercase">{category}</h3>
-                                        <h2 className="text-gray-900 title-font text-lg font-medium">{title}</h2>
-                                        <p className="mt-1 text-md font-semibold">${price}</p>
+                                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1 text-left uppercase">{category}</h3>
+                                        <h2 className="text-gray-900 title-font text-lg font-medium text-left">{title}</h2>
+                                        <p className="mt-1 text-md text-orange-500 font-semibold text-left">Price $-{price}</p>
                                     </div>
                                 </div>
+
                             )
                         })
                         }
